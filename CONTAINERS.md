@@ -22,10 +22,10 @@ docker build -t classcord-server .
 ### 2. Lancer le conteneur
 
 ```bash
-docker run -d --name classcord-server-classcord-1 -p 12345:12345 classcord-server
+docker run -dit -p 12345:12345 \ -p 54321:54321 classcord-server \ classcord-server
 ```
 
-- `-d` : Exécution en arrière-plan (détaché)
+- `-dit` : Exécution en arrière-plan (détaché)
 - `--name` : Nom du conteneur
 - `-p` : Mappage du port
 
@@ -37,6 +37,7 @@ Le serveur utilise le port `12345`, mappé depuis le conteneur vers l'hôte :
 
 ```
 HOST:12345  →  CONTAINER:12345
+ADMIN:54321
 ```
 
 ---
@@ -49,6 +50,7 @@ HOST:12345  →  CONTAINER:12345
   - Protocole : TCP
   - Hôte : 12345
   - Invité : 12345
+  - Admin : 54321
 
 Cela permet d'accéder à ton serveur depuis l’hôte à l’adresse `127.0.0.1:12345`.
 

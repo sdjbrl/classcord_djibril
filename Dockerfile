@@ -10,4 +10,4 @@ RUN pip install colorama
 EXPOSE 12345
 EXPOSE 54321
 
-CMD ["python3", "serveur_classcord.py"]
+CMD ["python3", "server_classcord.py"]

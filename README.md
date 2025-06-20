@@ -7,7 +7,7 @@
 
 ## Dépôt GitHub :
 
-- https://github.com/sdjbrl/classcord-djibril
+- https://github.com/sdjbrl/classcord-server
 
 ## Environnement de travail :
 
@@ -26,7 +26,7 @@
 
 ### Cloner le dépôt :
 
-- git clone https://github.com/sdjbrl/classcord-djibril.git
+- git clone https://github.com/sdjbrl/classcord-server.git
 
 ### Aller dans serveur : 
 
@@ -126,6 +126,9 @@ CMD ["python", "server_classcord.py"]
 
 - docker run -it --rm -p 12345:12345 -p 54321:54321 classcord-server
 
+### Automatisation du lancement avec un start-server :
+- bash start-server.sh
+
 # Jour 3
 
 ## Configuration de la journalisation des événements du serveur :
@@ -181,7 +184,7 @@ CMD ["python", "server_classcord.py"]
 
 ### Lancemement du menu admin :
 
-- Après avoir lancé le serveur, lancer la console admin : python3 admin_console.py
+- Après avoir lancé le serveur, lancer la console admin : python3 admin_cli.py
 
 ### Contenu du menu admin : 
 
