@@ -7,7 +7,7 @@
 
 ## Dépôt GitHub :
 
-- https://github.com/sdjbrl/classcord-server
+- https://github.com/sdjbrl/classcord-djibril
 
 ## Environnement de travail :
 
@@ -26,7 +26,7 @@
 
 ### Cloner le dépôt :
 
-- git clone https://github.com/sdjbrl/classcord-server.git
+- git clone https://github.com/sdjbrl/classcord-djibril.git
 
 ### Aller dans serveur : 
 
