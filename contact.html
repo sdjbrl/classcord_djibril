@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Portfolio Saïd AHMED MOUSSA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1 class="fw-bold">Contactez-moi</h1>
+    <p>Une question, un projet ? N'hésitez pas à m'écrire.</p>
+  </div>
+</section>
+
+<!-- FORMULAIRE DE CONTACT -->
+<section class="container">
+  <h2 class="section-title">Formulaire de contact</h2>
+  <form>
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" class="form-control" placeholder="Votre nom" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" class="form-control" placeholder="exemple@email.com" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" class="form-control" rows="6" placeholder="Votre message..." required></textarea>
+
+    <button type="submit" class="btn-primary-custom w-100">Envoyer</button>
+  </form>
+</section>
+
+<!-- INFOS DE CONTACT -->
+<section class="container">
+  <h2 class="section-title">Mes coordonnées</h2>
+  <div class="info-box text-center">
+    <h4>Saïd AHMED MOUSSA</h4>
+    <p>BTS SIO - SISR</p>
+    <p>IRIS MEDIASCHOOL, Nice</p>
+    <p>Email : <a href="mailto:saidahmed0610@yahoo.com" style="color:#00bfa6; text-decoration:none;">saidahmed0610@yahoo.com</a></p>
+    <p>Téléphone : 07 63 73 19 76</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 - Saïd AHMED MOUSSA | Portfolio BTS SIO</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

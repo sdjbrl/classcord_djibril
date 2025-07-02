@@ -1,0 +1,205 @@
+/* ===== Style général ===== */
+body {
+  background-color: #1b2330;
+  color: #cdd9e5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0a192f !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+.navbar-brand {
+  color: #00bfa6 !important;
+  font-size: 1.8rem;
+}
+.navbar-nav .nav-link {
+  color: #a3b8cc !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00bfa6 !important;
+}
+
+/* Bannière */
+.highlight {
+  background: linear-gradient(135deg, #00bfa6, #007b8a);
+  color: #e0f7f4;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 8px 30px #007b8aaa;
+}
+.highlight h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 6px #004d4d;
+  margin-bottom: 10px;
+}
+.highlight p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
+
+/* Titres sections */
+.section-title {
+  color: #00bfa6;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Sections */
+section.container {
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+section.container p,
+section.container ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background-color: #152536;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 191, 166, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  color: #a0d9d9;
+}
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 16px 40px rgba(0, 191, 166, 0.7);
+  color: #e0f7f4;
+}
+.card h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #00bfa6;
+}
+.card ul {
+  padding-left: 1rem;
+  text-align: left;
+  list-style: inside disc;
+  color: #b2e2db;
+}
+
+/* Image SDN */
+.img-sdn {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px #00bfa699;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.img-sdn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px #00bfa6cc;
+}
+small.text-muted {
+  color: #7f9db9 !important;
+}
+
+/* Footer */
+footer {
+  background-color: #0a192f;
+  color: #8892b0;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: inset 0 5px 10px #007b8a22;
+}
+
+/* Fade-in animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #00bfa6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 14px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 6px 16px rgba(0, 191, 166, 0.6);
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+#scrollTopBtn:hover {
+  background: #009e8f;
+}
+
+/* Dark mode toggle button */
+.btn-darkmode {
+  border: 2px solid #00bfa6;
+  background: transparent;
+  color: #00bfa6;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-darkmode:hover {
+  background-color: #00bfa6;
+  color: #0a192f;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #0a192f;
+  color: #a8b2d1;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+body.dark-mode .navbar {
+  background-color: #061420 !important;
+  box-shadow: 0 2px 15px rgba(0, 191, 166, 0.9);
+}
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar-nav .nav-link {
+  color: #00bfa6 !important;
+}
+body.dark-mode .card {
+  background-color: #072b34;
+  box-shadow: 0 8px 30px rgba(0, 191, 166, 0.7);
+  color: #a0d9d9;
+}
+body.dark-mode .highlight {
+  background: linear-gradient(135deg, #008374, #004d40);
+  color: #c9f9f0;
+  box-shadow: 0 8px 30px #004d4080;
+}
+body.dark-mode footer {
+  background-color: #061420;
+  color: #65e4d1;
+  box-shadow: inset 0 5px 15px #004d4077;
+}

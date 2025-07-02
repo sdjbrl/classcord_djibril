@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille Technologique | Omar Talibi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="veille.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link active" href="veille.html">Veille</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNIÈRE -->
+<section class="highlight text-center fade-in">
+  <div class="container">
+    <h1 class="fw-bold">Veille Technologique</h1>
+    <p class="lead">Sujet analysé : Infrastructure as Code</p>
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="container my-5 fade-in">
+  <h2 class="section-title">🎯 Problématique</h2>
+  <p class="col-lg-10 mx-auto fs-5">
+    <strong>Comment Terraform et Ansible permettent-ils, dans un environnement multi-cloud, de déployer une Infrastructure as Code à la fois efficace, sécurisée et maintenable ?</strong>
+  </p>
+  <p class="col-lg-10 mx-auto">
+    Cette question oriente ma veille technologique durant le BTS SIO SISR. Elle permet de comprendre les évolutions dans les infrastructures réseaux, leur automatisation, et les nouvelles compétences à maîtriser.
+  </p>
+</section>
+
+<!-- IMAGE -->
+<section class="container text-center mb-4 fade-in">
+  <img 
+    src="img/Infrastructure-As-Code.jpg"
+    alt="Illustration d’une architecture Infrastructure As Code"
+    width="400"
+    class="img-fluid d-block mx-auto"
+/>
+  <small class="text-muted d-block mt-1">
+    Illustration d’une architecture Infrastructure As Code
+  </small>
+</section>
+
+<!-- Infrastructure As Code DEFINITION -->
+<section class="container my-5 fade-in">
+  <h2 class="section-title">📘 Qu’est-ce que l'Infrastructure as Code ?</h2>
+  <p class="col-lg-10 mx-auto">
+    L’Infrastructure as Code consiste à décrire et gérer l’infrastructure sous forme de code versionné pour automatiser sa création, sa configuration et sa maintenance.
+  </p>
+</section>
+
+<!-- ARCHITECTURE & OBJECTIFS -->
+<section class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-6 fade-in">
+      <div class="card p-4 h-100">
+        <h4>🔧 Objectifs du Infrastructure As Code</h4>
+        <ul>
+          <li>Automatiser les déploiements</li>
+          <li>Reproduire fidèlement les environnements</li>
+          <li>Garantir l’idempotence</li>
+          <li>Versionner et tracer les changements</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 fade-in">
+      <div class="card p-4 h-100">
+        <h4>🧱 Architecture Infrastructure As Code</h4>
+        <ul>
+          <li><strong>Application Layer :</strong> outils de supervision</li>
+          <li><strong>Control Layer :</strong> contrôleurs Infrastructure As Code (OpenDaylight, ONOS)</li>
+          <li><strong>Infrastructure Layer :</strong> équipements réseau standards</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT TECHNICIEN -->
+<section class="container my-5 fade-in">
+  <h2 class="section-title">👨‍💻 Impact pour le technicien SISR</h2>
+  <ul class="col-lg-8 mx-auto fs-5">
+    <li>Automatisation renforcée</li>
+    <li>Sécurité et gouvernance intégrées</li>
+    <li>Surveillance de l’état & gestion des dérives</li>
+    <li>Collaboration et documentation</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-5">
+  <p>© 2025 Saïd AHMED MOUSSA - Tous droits réservés.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="veille.js"></script>
+</body>
+</html>
